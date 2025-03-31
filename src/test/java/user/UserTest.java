@@ -13,7 +13,7 @@ public class UserTest {
         assertEquals("Lösenord123", user.getPassword());
     }
 
-//    @Test
-//    public void changePassword() {
-//    }
+    @Test
+    public void changePassword() {
+    }
 }
