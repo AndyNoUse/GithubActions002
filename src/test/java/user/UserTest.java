@@ -14,6 +14,9 @@ public class UserTest {
     }
 
     @Test
-    public void changePassword() {
+    public void addUserFailure() {
+        User user = new User("Svensson", "Lösenord1234");
+        assertEquals("Svensson", user.getUsername());
+        assertEquals("Lösenord123", user.getPassword());
     }
 }
