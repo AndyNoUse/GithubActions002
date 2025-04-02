@@ -19,4 +19,14 @@ public class UserTest {
         assertEquals("Svensson", user.getUsername());
         assertEquals("Lösenord123", user.getPassword());
     }
+    @Test
+    public void getUsername() {
+        User user = new User("URBAN", "Lösenord123");
+        assertEquals("URBAN", user.getUsername());
+    }
+    @Test
+    public void getPassword() {
+        User user = new User("URBAN", "SUPERHARDPASSWORD!123");
+        assertEquals("SUPERHARDPASSWORD!123", user.getPassword());
+    }
 }
