@@ -29,4 +29,10 @@ public class UserTest {
         User user = new User("URBAN", "SUPERHARDPASSWORD!123");
         assertEquals("SUPERHARDPASSWORD!123", user.getPassword());
     }
+    @Test
+    public void changePassword() {
+        User user = new User("URBAN", "SUPERHARDPASSWORD!123");
+        user.changePassword("Lösenord123");
+        assertEquals("Lösenord123", user.getPassword());
+    }
 }

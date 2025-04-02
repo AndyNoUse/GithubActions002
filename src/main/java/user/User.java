@@ -16,6 +16,10 @@ public class User {
         return password;
     }
 
+    public void changePassword(String newPassword) {
+        this.password = newPassword;
+    }
+
     //Skriv koden som gör att testet i uppgift 3 blir godkänt och spara parametrarna i
     // två attribut: userName, password. För alla kommande uppgifter gör likadant
     // Red – Green – Refactor
