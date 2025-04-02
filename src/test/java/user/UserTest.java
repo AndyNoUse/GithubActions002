@@ -33,6 +33,6 @@ public class UserTest {
     public void changePassword() {
         User user = new User("URBAN", "SUPERHARDPASSWORD!123");
         user.changePassword("Lösenord123");
-        assertEquals("Lösenord123", user.getPassword());
+        assertEquals("Lösenord123 LOLFAIL", user.getPassword());
     }
 }
